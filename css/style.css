@@ -1,0 +1,97 @@
+.wrapper {
+    width: 100%;
+    display: block;
+    font-size: 0;
+}
+
+.wrapperMargin {
+    max-width: 999px;
+    margin: 0 auto;
+}
+
+.wrapperPadding {
+    padding: 0 20px;
+}
+
+.wrapperSpacer {
+    font-size: 16px;
+}
+
+.wrapperFullWidth {
+    width: 100%;
+    display:block;
+}
+
+.wrapperDuo {
+    width: calc(100%/2);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.wrapperTrio {
+    width: calc(100%/3);
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 850px) {
+    .wrapperTrio {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .wrapperDuo,
+    .wrapperTrio {
+        width: 100%;
+        display: block;
+    }
+}
+
+body {
+    line-height: 1.6em;
+    font-family: Helvetica, sans-serif;
+}
+
+.titleText {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.brandText {
+    color: #562877;
+}
+
+.backgroundPink {
+    background-color: #e6007e;
+    color: #FFF;
+}
+
+.backgroundBlue {
+    background-color: #562877;
+    color: #FFF;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.dot.dotDark {
+    background-color: #552877;
+}
+
+.dot.dotLight {
+    background-color: #cbbed6;
+}
+
+.flex1 {
+    flex: 2 2 20em;
+}
+
+.flex2 {
+    flex: 1 1 20em;
+}
+
