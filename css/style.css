@@ -34,20 +34,6 @@
     vertical-align: top;
 }
 
-@media screen and (max-width: 850px) {
-    .wrapperTrio {
-        width: calc(100%/2);
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .wrapperDuo,
-    .wrapperTrio {
-        width: 100%;
-        display: block;
-    }
-}
-
 body {
     line-height: 1.8em;
     font-family: Helvetica, sans-serif;
@@ -57,6 +43,15 @@ header .logo {
     width: 100%;
     max-width:100px;
     max-height:90px;
+}
+
+header {
+    position: relative;
+}
+
+.headerBtn {
+    position: absolute;
+    right: 10px;
 }
 
 .titleText {
@@ -75,6 +70,10 @@ header .logo {
 .backgroundBlue {
     background-color: #562877;
     color: #FFF;
+}
+
+.textPink {
+    color: #e6007e;
 }
 
 .dot {
@@ -165,7 +164,7 @@ blockquote::before{
     color: #562877;
     /*Positioning*/
     position: absolute;
-    left: -30px;
+    left: -15px;
     top:-5px;
   }
 
@@ -181,6 +180,13 @@ blockquote::before{
     position: absolute;
     right: 10px;
   }
+
+  .borderImg {
+    background-image: url("../images/blockqupteImg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 90% 0%;
+}
 
 .btn {
     max-height: 50px;
@@ -206,5 +212,75 @@ blockquote::before{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100% 0%;
+}
+
+.socials {
+    position: relative;
+    margin-top: 100px;
+}
+
+.pos {
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 850px) {
+    .wrapperTrio {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    header .logo {
+        width: 100%;
+        max-width:70px;
+        max-height:70px;
+    }
+
+    header .btnArrow {
+        display: none;
+    }
+
+    .wrapperDuo,
+    .wrapperTrio {
+        width: 100%;
+        display: block;
+    }
+
+    header {
+        z-index: 1;
+    }
+
+    .headerbtn {
+        position: relative;
+    }
+
+    .respMargin {
+        margin-top: 50px;
+    }
+
+    .heroContent {
+        position: relative;
+        z-index: 1;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255,255,255,0.4);
+        z-index: 0;
+    }
+
+    .socials {
+        padding-bottom: 100px;
+    }
 }
 
