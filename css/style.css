@@ -49,8 +49,14 @@
 }
 
 body {
-    line-height: 1.6em;
+    line-height: 1.8em;
     font-family: Helvetica, sans-serif;
+}
+
+header .logo {
+    width: 100%;
+    max-width:100px;
+    max-height:90px;
 }
 
 .titleText {
@@ -93,5 +99,112 @@ body {
 
 .flex2 {
     flex: 1 1 20em;
+}
+
+.paddingS {
+    padding: 10px 0;
+}
+.paddingM {
+    padding: 40px 0;
+}
+.paddingL {
+    padding: 60px 0;
+}
+.paddingXL {
+    padding: 80px 0;
+}
+
+.minHeight {
+    min-height: 160px;
+}
+
+.borderBlue {
+    /* box-shadow: -10px 10px #552877; */
+    box-shadow: -0.8rem 0.7rem #552877, 7px -1px 24px 3px #ccc;
+}
+
+.contentMinHeight {
+    min-height: 140px;
+}
+
+.titleMinHeight {
+    min-height: 55px;
+}
+
+.discoverFocus img {
+    width: 100%;
+    max-width:50px;
+    max-height:50px;
+}
+
+.discoverBG {
+    background-image: url("../images/backdrop-left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.highlightList li:before {
+    content: "\2022";
+    color: #552877;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: 30px;
+}
+
+blockquote {
+    position: relative;
+}
+
+blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #562877;
+    /*Positioning*/
+    position: absolute;
+    left: -30px;
+    top:-5px;
+  }
+
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "\201D"; /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #562877;
+    /*Positioning*/
+    position: absolute;
+    right: 10px;
+  }
+
+.btn {
+    max-height: 50px;
+    background-color: #562877;
+    color: #FFF;
+    margin-top: 15px;
+    max-width: 125px;
+}
+
+.btn span  {
+    display: block;
+    padding: 11px 10px;
+}
+
+.btnArrow {
+    width: 100%;
+    max-width:50px;
+    max-height:50px;
+}
+
+.hero {
+    background-image: url("../images/backdrop-right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 0%;
 }
 
